@@ -8,8 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		67D7C6035FA67F7DF244010B /* Pods_lazymetro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6606E5E83146BEC4DE28342 /* Pods_lazymetro.framework */; };
+		CF80E31820339ED200CE21AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E31620339ED200CE21AB /* SettingsViewController.swift */; };
+		CF80E31920339ED200CE21AB /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E31720339ED200CE21AB /* SettingsViewController.xib */; };
+		CF80E31B20339EF300CE21AB /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E31A20339EF300CE21AB /* SettingsViewModel.swift */; };
+		CF80E31D20339F0000CE21AB /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E31C20339F0000CE21AB /* SettingsDataSource.swift */; };
+		CF80E31F20339F1400CE21AB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E31E20339F1400CE21AB /* SettingsView.swift */; };
+		CF80E3242033A1DE00CE21AB /* TripManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E3232033A1DE00CE21AB /* TripManagerView.swift */; };
+		CF80E3272033A1E900CE21AB /* TripManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E3252033A1E900CE21AB /* TripManagerViewController.swift */; };
+		CF80E3282033A1E900CE21AB /* TripManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E3262033A1E900CE21AB /* TripManagerViewController.xib */; };
+		CF80E32A2033A1F700CE21AB /* TripManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E3292033A1F700CE21AB /* TripManagerViewModel.swift */; };
+		CF80E32E2033A32E00CE21AB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E32D2033A32E00CE21AB /* MapViewModel.swift */; };
+		CF80E3312033A33E00CE21AB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E32F2033A33E00CE21AB /* MapViewController.swift */; };
+		CF80E3322033A33E00CE21AB /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E3302033A33E00CE21AB /* MapViewController.xib */; };
+		CF80E3342033A34B00CE21AB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E3332033A34B00CE21AB /* MapView.swift */; };
+		CF80E3382033A38400CE21AB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E3372033A38400CE21AB /* TimerView.swift */; };
+		CF80E33C2033A39400CE21AB /* TimerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E33A2033A39400CE21AB /* TimerViewViewController.swift */; };
+		CF80E33D2033A39400CE21AB /* TimerViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E33B2033A39400CE21AB /* TimerViewViewController.xib */; };
+		CF80E33F2033A3A100CE21AB /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E33E2033A3A100CE21AB /* TimerViewModel.swift */; };
 		CFCDABA92033976B000CD36F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCDABA82033976B000CD36F /* AppDelegate.swift */; };
-		CFCDABAB2033976B000CD36F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCDABAA2033976B000CD36F /* ViewController.swift */; };
 		CFCDABAE2033976B000CD36F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABAC2033976B000CD36F /* Main.storyboard */; };
 		CFCDABB02033976B000CD36F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABAF2033976B000CD36F /* Assets.xcassets */; };
 		CFCDABB32033976B000CD36F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABB12033976B000CD36F /* LaunchScreen.storyboard */; };
@@ -18,9 +34,25 @@
 /* Begin PBXFileReference section */
 		179D20FC81252A70EB95B48C /* Pods-lazymetro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazymetro.release.xcconfig"; path = "Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro.release.xcconfig"; sourceTree = "<group>"; };
 		57731B71FFA4866A76DF4084 /* Pods-lazymetro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazymetro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro.debug.xcconfig"; sourceTree = "<group>"; };
+		CF80E31620339ED200CE21AB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CF80E31720339ED200CE21AB /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		CF80E31A20339EF300CE21AB /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		CF80E31C20339F0000CE21AB /* SettingsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
+		CF80E31E20339F1400CE21AB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CF80E3232033A1DE00CE21AB /* TripManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerView.swift; sourceTree = "<group>"; };
+		CF80E3252033A1E900CE21AB /* TripManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerViewController.swift; sourceTree = "<group>"; };
+		CF80E3262033A1E900CE21AB /* TripManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripManagerViewController.xib; sourceTree = "<group>"; };
+		CF80E3292033A1F700CE21AB /* TripManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerViewModel.swift; sourceTree = "<group>"; };
+		CF80E32D2033A32E00CE21AB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		CF80E32F2033A33E00CE21AB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CF80E3302033A33E00CE21AB /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		CF80E3332033A34B00CE21AB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CF80E3372033A38400CE21AB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		CF80E33A2033A39400CE21AB /* TimerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewViewController.swift; sourceTree = "<group>"; };
+		CF80E33B2033A39400CE21AB /* TimerViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewViewController.xib; sourceTree = "<group>"; };
+		CF80E33E2033A3A100CE21AB /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		CFCDABA52033976B000CD36F /* lazymetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazymetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCDABA82033976B000CD36F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFCDABAA2033976B000CD36F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFCDABAD2033976B000CD36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFCDABAF2033976B000CD36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFCDABB22033976B000CD36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,9 +89,163 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF80E30B20339C6800CE21AB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E30C20339C6800CE21AB /* DataSources */,
+				CF80E30D20339C6800CE21AB /* UI */,
+				CF80E30E20339C6800CE21AB /* Kits */,
+				CF80E30F20339C6800CE21AB /* Constants */,
+				CF80E31020339C6800CE21AB /* Models */,
+				CF80E31120339C6800CE21AB /* Lib */,
+			);
+			name = Source;
+			path = lazymetro/Source;
+			sourceTree = "<group>";
+		};
+		CF80E30C20339C6800CE21AB /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		CF80E30D20339C6800CE21AB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E3352033A34F00CE21AB /* TimerViewController */,
+				CF80E32B2033A31300CE21AB /* MapViewController */,
+				CF80E32020339F1E00CE21AB /* TripManagerViewController */,
+				CF80E31220339E9000CE21AB /* SettingsViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CF80E30E20339C6800CE21AB /* Kits */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Kits;
+			sourceTree = "<group>";
+		};
+		CF80E30F20339C6800CE21AB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CF80E31020339C6800CE21AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF80E31120339C6800CE21AB /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		CF80E31220339E9000CE21AB /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E31520339EAE00CE21AB /* ViewModel */,
+				CF80E31420339EA800CE21AB /* TableView */,
+				CF80E31320339EA100CE21AB /* DataSource */,
+				CF80E31620339ED200CE21AB /* SettingsViewController.swift */,
+				CF80E31720339ED200CE21AB /* SettingsViewController.xib */,
+				CF80E31E20339F1400CE21AB /* SettingsView.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		CF80E31320339EA100CE21AB /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E31C20339F0000CE21AB /* SettingsDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		CF80E31420339EA800CE21AB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		CF80E31520339EAE00CE21AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E31A20339EF300CE21AB /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF80E32020339F1E00CE21AB /* TripManagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E3212033A1B400CE21AB /* ViewModel */,
+				CF80E3232033A1DE00CE21AB /* TripManagerView.swift */,
+				CF80E3252033A1E900CE21AB /* TripManagerViewController.swift */,
+				CF80E3262033A1E900CE21AB /* TripManagerViewController.xib */,
+			);
+			path = TripManagerViewController;
+			sourceTree = "<group>";
+		};
+		CF80E3212033A1B400CE21AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E3292033A1F700CE21AB /* TripManagerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF80E32B2033A31300CE21AB /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E32C2033A31C00CE21AB /* MapViewModel */,
+				CF80E32F2033A33E00CE21AB /* MapViewController.swift */,
+				CF80E3302033A33E00CE21AB /* MapViewController.xib */,
+				CF80E3332033A34B00CE21AB /* MapView.swift */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		CF80E32C2033A31C00CE21AB /* MapViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E32D2033A32E00CE21AB /* MapViewModel.swift */,
+			);
+			path = MapViewModel;
+			sourceTree = "<group>";
+		};
+		CF80E3352033A34F00CE21AB /* TimerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E3362033A37900CE21AB /* TimerViewModel */,
+				CF80E3372033A38400CE21AB /* TimerView.swift */,
+				CF80E33A2033A39400CE21AB /* TimerViewViewController.swift */,
+				CF80E33B2033A39400CE21AB /* TimerViewViewController.xib */,
+			);
+			path = TimerViewController;
+			sourceTree = "<group>";
+		};
+		CF80E3362033A37900CE21AB /* TimerViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF80E33E2033A3A100CE21AB /* TimerViewModel.swift */,
+			);
+			path = TimerViewModel;
+			sourceTree = "<group>";
+		};
 		CFCDAB9C2033976B000CD36F = {
 			isa = PBXGroup;
 			children = (
+				CF80E30B20339C6800CE21AB /* Source */,
 				CFCDABA72033976B000CD36F /* lazymetro */,
 				CFCDABA62033976B000CD36F /* Products */,
 				B3C0D0E1FB60A179475D8AE6 /* Pods */,
@@ -79,7 +265,6 @@
 			isa = PBXGroup;
 			children = (
 				CFCDABA82033976B000CD36F /* AppDelegate.swift */,
-				CFCDABAA2033976B000CD36F /* ViewController.swift */,
 				CFCDABAC2033976B000CD36F /* Main.storyboard */,
 				CFCDABAF2033976B000CD36F /* Assets.xcassets */,
 				CFCDABB12033976B000CD36F /* LaunchScreen.storyboard */,
@@ -150,9 +335,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF80E3282033A1E900CE21AB /* TripManagerViewController.xib in Resources */,
+				CF80E3322033A33E00CE21AB /* MapViewController.xib in Resources */,
 				CFCDABB32033976B000CD36F /* LaunchScreen.storyboard in Resources */,
+				CF80E33D2033A39400CE21AB /* TimerViewViewController.xib in Resources */,
 				CFCDABB02033976B000CD36F /* Assets.xcassets in Resources */,
 				CFCDABAE2033976B000CD36F /* Main.storyboard in Resources */,
+				CF80E31920339ED200CE21AB /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +412,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCDABAB2033976B000CD36F /* ViewController.swift in Sources */,
+				CF80E33F2033A3A100CE21AB /* TimerViewModel.swift in Sources */,
+				CF80E31F20339F1400CE21AB /* SettingsView.swift in Sources */,
+				CF80E3242033A1DE00CE21AB /* TripManagerView.swift in Sources */,
+				CF80E3272033A1E900CE21AB /* TripManagerViewController.swift in Sources */,
+				CF80E3342033A34B00CE21AB /* MapView.swift in Sources */,
+				CF80E3312033A33E00CE21AB /* MapViewController.swift in Sources */,
 				CFCDABA92033976B000CD36F /* AppDelegate.swift in Sources */,
+				CF80E3382033A38400CE21AB /* TimerView.swift in Sources */,
+				CF80E31820339ED200CE21AB /* SettingsViewController.swift in Sources */,
+				CF80E31B20339EF300CE21AB /* SettingsViewModel.swift in Sources */,
+				CF80E32A2033A1F700CE21AB /* TripManagerViewModel.swift in Sources */,
+				CF80E31D20339F0000CE21AB /* SettingsDataSource.swift in Sources */,
+				CF80E33C2033A39400CE21AB /* TimerViewViewController.swift in Sources */,
+				CF80E32E2033A32E00CE21AB /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

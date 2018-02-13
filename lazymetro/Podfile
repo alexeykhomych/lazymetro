@@ -9,5 +9,6 @@ target 'lazymetro' do
 	pod 'RxSwift',    '~> 4.0'
     	pod 'RxCocoa',    '~> 4.0'
 	pod 'RealmSwift'
-
+	pod "IDPRootViewGettable", :git => 'https://github.com/idapgroup/IDPRootViewGettable.git'
+	pod 'GoogleMaps'
 end
