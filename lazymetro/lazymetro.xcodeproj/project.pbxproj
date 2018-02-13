@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67D7C6035FA67F7DF244010B /* Pods_lazymetro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6606E5E83146BEC4DE28342 /* Pods_lazymetro.framework */; };
 		CFCDABA92033976B000CD36F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCDABA82033976B000CD36F /* AppDelegate.swift */; };
 		CFCDABAB2033976B000CD36F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCDABAA2033976B000CD36F /* ViewController.swift */; };
 		CFCDABAE2033976B000CD36F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABAC2033976B000CD36F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		179D20FC81252A70EB95B48C /* Pods-lazymetro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazymetro.release.xcconfig"; path = "Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro.release.xcconfig"; sourceTree = "<group>"; };
+		57731B71FFA4866A76DF4084 /* Pods-lazymetro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazymetro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro.debug.xcconfig"; sourceTree = "<group>"; };
 		CFCDABA52033976B000CD36F /* lazymetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazymetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCDABA82033976B000CD36F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFCDABAA2033976B000CD36F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CFCDABAF2033976B000CD36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFCDABB22033976B000CD36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFCDABB42033976B000CD36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6606E5E83146BEC4DE28342 /* Pods_lazymetro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lazymetro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D7C6035FA67F7DF244010B /* Pods_lazymetro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62B150DD2FD998890145A754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6606E5E83146BEC4DE28342 /* Pods_lazymetro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3C0D0E1FB60A179475D8AE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57731B71FFA4866A76DF4084 /* Pods-lazymetro.debug.xcconfig */,
+				179D20FC81252A70EB95B48C /* Pods-lazymetro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CFCDAB9C2033976B000CD36F = {
 			isa = PBXGroup;
 			children = (
 				CFCDABA72033976B000CD36F /* lazymetro */,
 				CFCDABA62033976B000CD36F /* Products */,
+				B3C0D0E1FB60A179475D8AE6 /* Pods */,
+				62B150DD2FD998890145A754 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFCDABB72033976B000CD36F /* Build configuration list for PBXNativeTarget "lazymetro" */;
 			buildPhases = (
+				0E2EEFCF1234ED00E9B58C63 /* [CP] Check Pods Manifest.lock */,
 				CFCDABA12033976B000CD36F /* Sources */,
 				CFCDABA22033976B000CD36F /* Frameworks */,
 				CFCDABA32033976B000CD36F /* Resources */,
+				FDD2474F2F2782C0A764CB88 /* [CP] Embed Pods Frameworks */,
+				FB946871C661CB4CFFC65F0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E2EEFCF1234ED00E9B58C63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lazymetro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB946871C661CB4CFFC65F0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD2474F2F2782C0A764CB88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFCDABA12033976B000CD36F /* Sources */ = {
@@ -272,6 +359,7 @@
 		};
 		CFCDABB82033976B000CD36F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57731B71FFA4866A76DF4084 /* Pods-lazymetro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +374,7 @@
 		};
 		CFCDABB92033976B000CD36F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179D20FC81252A70EB95B48C /* Pods-lazymetro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
