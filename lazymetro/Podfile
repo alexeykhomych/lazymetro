@@ -7,8 +7,9 @@ target 'lazymetro' do
 
   # Pods for lazymetro
 	pod 'RxSwift',    '~> 4.0'
-    	pod 'RxCocoa',    '~> 4.0'
+    pod 'RxCocoa',    '~> 4.0'
 	pod 'RealmSwift'
-	pod "IDPRootViewGettable", :git => 'https://github.com/idapgroup/IDPRootViewGettable.git'
+    pod 'IDPRootViewGettable', :git => 'https://github.com/idapgroup/IDPRootViewGettable.git'
 	pod 'GoogleMaps'
+    pod 'BATabBarController'
 end

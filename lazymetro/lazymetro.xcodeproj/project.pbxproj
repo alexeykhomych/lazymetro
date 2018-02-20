@@ -26,7 +26,6 @@
 		CF80E33D2033A39400CE21AB /* TimerViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E33B2033A39400CE21AB /* TimerViewViewController.xib */; };
 		CF80E33F2033A3A100CE21AB /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E33E2033A3A100CE21AB /* TimerViewModel.swift */; };
 		CFCDABA92033976B000CD36F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCDABA82033976B000CD36F /* AppDelegate.swift */; };
-		CFCDABAE2033976B000CD36F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABAC2033976B000CD36F /* Main.storyboard */; };
 		CFCDABB02033976B000CD36F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABAF2033976B000CD36F /* Assets.xcassets */; };
 		CFCDABB32033976B000CD36F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABB12033976B000CD36F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -53,7 +52,6 @@
 		CF80E33E2033A3A100CE21AB /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		CFCDABA52033976B000CD36F /* lazymetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazymetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCDABA82033976B000CD36F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFCDABAD2033976B000CD36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFCDABAF2033976B000CD36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFCDABB22033976B000CD36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFCDABB42033976B000CD36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,11 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				CF80E30C20339C6800CE21AB /* DataSources */,
-				CF80E30D20339C6800CE21AB /* UI */,
 				CF80E30E20339C6800CE21AB /* Kits */,
 				CF80E30F20339C6800CE21AB /* Constants */,
 				CF80E31020339C6800CE21AB /* Models */,
 				CF80E31120339C6800CE21AB /* Lib */,
+				CF80E30D20339C6800CE21AB /* UI */,
 			);
 			name = Source;
 			path = lazymetro/Source;
@@ -265,7 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				CFCDABA82033976B000CD36F /* AppDelegate.swift */,
-				CFCDABAC2033976B000CD36F /* Main.storyboard */,
 				CFCDABAF2033976B000CD36F /* Assets.xcassets */,
 				CFCDABB12033976B000CD36F /* LaunchScreen.storyboard */,
 				CFCDABB42033976B000CD36F /* Info.plist */,
@@ -340,7 +337,6 @@
 				CFCDABB32033976B000CD36F /* LaunchScreen.storyboard in Resources */,
 				CF80E33D2033A39400CE21AB /* TimerViewViewController.xib in Resources */,
 				CFCDABB02033976B000CD36F /* Assets.xcassets in Resources */,
-				CFCDABAE2033976B000CD36F /* Main.storyboard in Resources */,
 				CF80E31920339ED200CE21AB /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,8 +387,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BATabBarController/BATabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/IDPCastable/IDPCastable.framework",
 				"${BUILT_PRODUCTS_DIR}/IDPRootViewGettable/IDPRootViewGettable.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -400,8 +398,10 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BATabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IDPCastable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IDPRootViewGettable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -439,14 +439,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CFCDABAC2033976B000CD36F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFCDABAD2033976B000CD36F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CFCDABB12033976B000CD36F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

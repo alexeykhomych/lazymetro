@@ -9,13 +9,8 @@
 import UIKit
 
 class TripManagerView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+    @IBOutlet var metroMapImageView: UIImageView?
+    @IBOutlet var arrivalTimeLabel: UILabel?
+    @IBOutlet var timerLabel: UILabel?
+    @IBOutlet var navigationTabBar: UITabBar?
 }
