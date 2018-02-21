@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fMO-uc-XaQ">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <rect key="frame" x="10" y="25" width="350" height="50"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время прибытия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wW-SR-WTA">
                             <rect key="frame" x="0.0" y="0.0" width="181" height="50"/>
@@ -29,7 +30,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:08:56" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAU-9y-bkX">
-                            <rect key="frame" x="191" y="0.0" width="184" height="50"/>
+                            <rect key="frame" x="191" y="0.0" width="159" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -44,38 +45,23 @@
                         <constraint firstAttribute="trailing" secondItem="JAU-9y-bkX" secondAttribute="trailing" id="upv-1V-Kx1"/>
                     </constraints>
                 </stackView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metro_map" translatesAutoresizingMaskIntoConstraints="NO" id="OAy-PL-lBq">
-                    <rect key="frame" x="0.0" y="50" width="375" height="567"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metro_map" translatesAutoresizingMaskIntoConstraints="NO" id="yhk-MQ-53E">
+                    <rect key="frame" x="15" y="90" width="345" height="467"/>
                 </imageView>
-                <tabBar contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" translatesAutoresizingMaskIntoConstraints="NO" id="TrO-TK-Sv8">
-                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="8c4-bh-cLj"/>
-                    </constraints>
-                    <items>
-                        <tabBarItem systemItem="favorites" id="6bX-Sp-SsX"/>
-                        <tabBarItem systemItem="more" id="jRm-6r-u0b"/>
-                    </items>
-                </tabBar>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="OAy-PL-lBq" secondAttribute="trailing" id="2sq-aN-2Nk"/>
-                <constraint firstAttribute="trailing" secondItem="TrO-TK-Sv8" secondAttribute="trailing" id="HWP-Ef-Apo"/>
-                <constraint firstItem="TrO-TK-Sv8" firstAttribute="top" secondItem="OAy-PL-lBq" secondAttribute="bottom" id="KQn-c8-Bry"/>
-                <constraint firstItem="OAy-PL-lBq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N45-uc-dvu"/>
-                <constraint firstItem="OAy-PL-lBq" firstAttribute="top" secondItem="fMO-uc-XaQ" secondAttribute="bottom" id="NTN-fR-j9R"/>
-                <constraint firstAttribute="bottom" secondItem="TrO-TK-Sv8" secondAttribute="bottom" id="OZM-TW-cvM"/>
-                <constraint firstAttribute="trailing" secondItem="fMO-uc-XaQ" secondAttribute="trailing" id="cer-oT-wuW"/>
-                <constraint firstItem="TrO-TK-Sv8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oei-jT-9Px"/>
-                <constraint firstItem="fMO-uc-XaQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pIB-1Q-U4M"/>
-                <constraint firstItem="fMO-uc-XaQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="to2-iL-Ml1"/>
+                <constraint firstItem="yhk-MQ-53E" firstAttribute="top" secondItem="fMO-uc-XaQ" secondAttribute="bottom" constant="15" id="5z7-rj-vc4"/>
+                <constraint firstItem="yhk-MQ-53E" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="J0A-M2-iXl"/>
+                <constraint firstAttribute="trailing" secondItem="fMO-uc-XaQ" secondAttribute="trailing" constant="15" id="cer-oT-wuW"/>
+                <constraint firstItem="yhk-MQ-53E" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.7" id="fUN-Z5-AkW"/>
+                <constraint firstAttribute="trailing" secondItem="yhk-MQ-53E" secondAttribute="trailing" constant="15" id="nSV-lI-J8f"/>
+                <constraint firstItem="fMO-uc-XaQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="pIB-1Q-U4M"/>
+                <constraint firstItem="fMO-uc-XaQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="to2-iL-Ml1"/>
             </constraints>
             <connections>
                 <outlet property="arrivalTimeLabel" destination="4wW-SR-WTA" id="vMl-R9-kgB"/>
-                <outlet property="metroMapImageView" destination="OAy-PL-lBq" id="z9t-ZU-PEm"/>
-                <outlet property="navigationTabBar" destination="TrO-TK-Sv8" id="K1F-cd-U4S"/>
+                <outlet property="metroMapImageView" destination="yhk-MQ-53E" id="VEj-ZJ-B8V"/>
                 <outlet property="timerLabel" destination="JAU-9y-bkX" id="zLm-UD-e6U"/>
             </connections>
             <point key="canvasLocation" x="34.5" y="54.5"/>

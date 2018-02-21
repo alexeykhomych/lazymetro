@@ -12,5 +12,4 @@ class TripManagerView: UIView {
     @IBOutlet var metroMapImageView: UIImageView?
     @IBOutlet var arrivalTimeLabel: UILabel?
     @IBOutlet var timerLabel: UILabel?
-    @IBOutlet var navigationTabBar: UITabBar?
 }

@@ -16,7 +16,7 @@ class TripManagerViewController: UIViewController, RootViewGettable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        print(self.rootView?.metroMapImageView?.bounds ?? "")
     }
     
     // MARK: - Private methods

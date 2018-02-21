@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '10.0'
 
 target 'lazymetro' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -11,5 +11,6 @@ target 'lazymetro' do
 	pod 'RealmSwift'
     pod 'IDPRootViewGettable', :git => 'https://github.com/idapgroup/IDPRootViewGettable.git'
 	pod 'GoogleMaps'
-    pod 'BATabBarController'
+pod 'RAMAnimatedTabBarController'
+
 end
