@@ -9,13 +9,10 @@
 import UIKit
 
 class TimerView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+    @IBOutlet var stationATextField: UITextField!
+    @IBOutlet var stationBTextField: UITextField!
+    @IBOutlet var timerALabel: UILabel!
+    @IBOutlet var addButton: UIButton!
+    @IBOutlet var resetButton: UIButton!
+    @IBOutlet var tableView: UITableView!
 }

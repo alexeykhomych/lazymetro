@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,56 +18,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
-        let controller = UINavigationController(rootViewController: TripManagerViewController())
-        controller.view = window.subviews[0]
-        window.rootViewController = controller
+        window.rootViewController = TabBarViewController()
         window.makeKeyAndVisible()
         
         return true
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-
-    }
-
     func applicationWillTerminate(_ application: UIApplication) {
-
+        self.saveContext()
     }
     
-//    private func prepareTabBarController() -> BATabBarController {
-//        let tripManagerViewController = TripManagerViewController()
-//        let mapViewController = MapViewController()
-//        let settingsViewController = SettingsViewController()
-//        let timerViewController = TimerViewViewController()
-//
-//        let tripTabBarItem = BATabBarItem(image: UIImage(named: "icon1_unselected"),
-//                                          selectedImage: UIImage(named: "icon1_selected"))
-//        let mapTabBarItem = BATabBarItem(image: UIImage(named: "icon1_unselected"),
-//                                          selectedImage: UIImage(named: "icon1_selected"))
-//        let settingsTabBarItem = BATabBarItem(image: UIImage(named: "icon2_unselected"),
-//                                          selectedImage: UIImage(named: "icon2_selected"))
-//        let timerTabBarItem = BATabBarItem(image: UIImage(named: "icon1_unselected"),
-//                                          selectedImage: UIImage(named: "icon1_selected"))
-//
-//        let controller = BATabBarController()
-//        controller.viewControllers = [tripManagerViewController,
-//                                      mapViewController,
-//                                      settingsViewController,
-//                                      timerViewController]
-//        controller.tabBarItems = [tripTabBarItem!, mapTabBarItem!, settingsTabBarItem!, timerTabBarItem!]
-//
-//        return controller
-//    }
+    // MARK: - Core Data stack
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "lazymetroCoreDataModel")
+        
+        let storeDirectory = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
+        let url = storeDirectory.appendingPathComponent("lazymetroCoreDataModel.xcdatamodeld")
+        
+        let description = NSPersistentStoreDescription(url: url)
+        description.shouldInferMappingModelAutomatically = true
+        description.shouldMigrateStoreAutomatically = true
+        
+        container.persistentStoreDescriptions = [description]
+        
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        
+        return container
+    }()
+    
+    // MARK: - Core Data Saving support
+    
+    func saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
 }

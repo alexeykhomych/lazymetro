@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		67D7C6035FA67F7DF244010B /* Pods_lazymetro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6606E5E83146BEC4DE28342 /* Pods_lazymetro.framework */; };
+		CF3D9B9F203F25A700C88938 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D9B9E203F25A700C88938 /* UIImage+Extensions.swift */; };
+		CF3D9BA320401AE900C88938 /* TimerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D9BA120401AE900C88938 /* TimerTableViewCell.swift */; };
+		CF3D9BA420401AE900C88938 /* TimerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF3D9BA220401AE900C88938 /* TimerTableViewCell.xib */; };
+		CF3D9BA720405DFA00C88938 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D9BA620405DFA00C88938 /* Log.swift */; };
+		CF611B342046DC60007C4807 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF611B332046DC60007C4807 /* Coordinator.swift */; };
+		CF611B362046DFBC007C4807 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF611B352046DFBC007C4807 /* User.swift */; };
+		CF611B382046E0F4007C4807 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF611B372046E0F4007C4807 /* Section.swift */; };
+		CF611B3A2046ED38007C4807 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF611B392046ED38007C4807 /* CoreDataManager.swift */; };
+		CF611B3E2046EED1007C4807 /* lazymetroCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF611B3C2046EED1007C4807 /* lazymetroCoreDataModel.xcdatamodeld */; };
+		CF611B4020470AB0007C4807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF611B3F20470AB0007C4807 /* Constants.swift */; };
 		CF80E31820339ED200CE21AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E31620339ED200CE21AB /* SettingsViewController.swift */; };
 		CF80E31920339ED200CE21AB /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E31720339ED200CE21AB /* SettingsViewController.xib */; };
 		CF80E31B20339EF300CE21AB /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E31A20339EF300CE21AB /* SettingsViewModel.swift */; };
@@ -22,17 +32,35 @@
 		CF80E3322033A33E00CE21AB /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E3302033A33E00CE21AB /* MapViewController.xib */; };
 		CF80E3342033A34B00CE21AB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E3332033A34B00CE21AB /* MapView.swift */; };
 		CF80E3382033A38400CE21AB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E3372033A38400CE21AB /* TimerView.swift */; };
-		CF80E33C2033A39400CE21AB /* TimerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E33A2033A39400CE21AB /* TimerViewViewController.swift */; };
-		CF80E33D2033A39400CE21AB /* TimerViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E33B2033A39400CE21AB /* TimerViewViewController.xib */; };
+		CF80E33C2033A39400CE21AB /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E33A2033A39400CE21AB /* TimerViewController.swift */; };
+		CF80E33D2033A39400CE21AB /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF80E33B2033A39400CE21AB /* TimerViewController.xib */; };
 		CF80E33F2033A3A100CE21AB /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80E33E2033A3A100CE21AB /* TimerViewModel.swift */; };
+		CF93AEBE203DCC9F0019D407 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AEBC203DCC9F0019D407 /* TabBarViewController.swift */; };
+		CF9AE352204411D000358F8D /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9AE351204411D000358F8D /* RealmManager.swift */; };
+		CF9AE3572044161200358F8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9AE3562044161200358F8D /* ViewController.swift */; };
+		CF9AE3592044166500358F8D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9AE3582044166500358F8D /* ViewModel.swift */; };
+		CF9AE35B20443F0D00358F8D /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9AE35A20443F0D00358F8D /* TableDataSource.swift */; };
 		CFCDABA92033976B000CD36F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCDABA82033976B000CD36F /* AppDelegate.swift */; };
 		CFCDABB02033976B000CD36F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABAF2033976B000CD36F /* Assets.xcassets */; };
 		CFCDABB32033976B000CD36F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCDABB12033976B000CD36F /* LaunchScreen.storyboard */; };
+		CFF9DB3F204452890097060B /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9DB3E204452890097060B /* ReusableCell.swift */; };
+		CFF9DB43204455F90097060B /* TimerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9DB42204455F90097060B /* TimerDataSource.swift */; };
+		CFF9DB45204469C20097060B /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9DB44204469C20097060B /* UITableView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		179D20FC81252A70EB95B48C /* Pods-lazymetro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazymetro.release.xcconfig"; path = "Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro.release.xcconfig"; sourceTree = "<group>"; };
 		57731B71FFA4866A76DF4084 /* Pods-lazymetro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazymetro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lazymetro/Pods-lazymetro.debug.xcconfig"; sourceTree = "<group>"; };
+		CF3D9B9E203F25A700C88938 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		CF3D9BA120401AE900C88938 /* TimerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewCell.swift; sourceTree = "<group>"; };
+		CF3D9BA220401AE900C88938 /* TimerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerTableViewCell.xib; sourceTree = "<group>"; };
+		CF3D9BA620405DFA00C88938 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		CF611B332046DC60007C4807 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CF611B352046DFBC007C4807 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CF611B372046E0F4007C4807 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		CF611B392046ED38007C4807 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CF611B3D2046EED1007C4807 /* lazymetroCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lazymetroCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		CF611B3F20470AB0007C4807 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CF726AE7203C7D480015BB70 /* ObjectiveBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveBridgingHeader.h; sourceTree = "<group>"; };
 		CF80E31620339ED200CE21AB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CF80E31720339ED200CE21AB /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -48,14 +76,22 @@
 		CF80E3302033A33E00CE21AB /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		CF80E3332033A34B00CE21AB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CF80E3372033A38400CE21AB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		CF80E33A2033A39400CE21AB /* TimerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewViewController.swift; sourceTree = "<group>"; };
-		CF80E33B2033A39400CE21AB /* TimerViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewViewController.xib; sourceTree = "<group>"; };
+		CF80E33A2033A39400CE21AB /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		CF80E33B2033A39400CE21AB /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		CF80E33E2033A3A100CE21AB /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		CF93AEBC203DCC9F0019D407 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CF9AE351204411D000358F8D /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		CF9AE3562044161200358F8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF9AE3582044166500358F8D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CF9AE35A20443F0D00358F8D /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		CFCDABA52033976B000CD36F /* lazymetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazymetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCDABA82033976B000CD36F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFCDABAF2033976B000CD36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFCDABB22033976B000CD36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFCDABB42033976B000CD36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF9DB3E204452890097060B /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		CFF9DB42204455F90097060B /* TimerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDataSource.swift; sourceTree = "<group>"; };
+		CFF9DB44204469C20097060B /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		D6606E5E83146BEC4DE28342 /* Pods_lazymetro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lazymetro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,9 +124,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF3D9BA020401ACE00C88938 /* TimerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF3D9BA120401AE900C88938 /* TimerTableViewCell.swift */,
+				CF3D9BA220401AE900C88938 /* TimerTableViewCell.xib */,
+			);
+			path = TimerTableViewCell;
+			sourceTree = "<group>";
+		};
+		CF3D9BA520405DE900C88938 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CF3D9BA620405DFA00C88938 /* Log.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		CF611B3B2046EE6F007C4807 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF611B3C2046EED1007C4807 /* lazymetroCoreDataModel.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CF80E30B20339C6800CE21AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CF611B3B2046EE6F007C4807 /* Resources */,
+				CF9AE353204415EC00358F8D /* Patterns */,
+				CF9AE350204411A000358F8D /* Services */,
 				CF80E30C20339C6800CE21AB /* DataSources */,
 				CF80E30E20339C6800CE21AB /* Kits */,
 				CF80E30F20339C6800CE21AB /* Constants */,
@@ -105,6 +169,7 @@
 		CF80E30C20339C6800CE21AB /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				CF9AE35A20443F0D00358F8D /* TableDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -112,6 +177,7 @@
 		CF80E30D20339C6800CE21AB /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CF93AEBB203DCC820019D407 /* TabBarViewController */,
 				CF80E3352033A34F00CE21AB /* TimerViewController */,
 				CF80E32B2033A31300CE21AB /* MapViewController */,
 				CF80E32020339F1E00CE21AB /* TripManagerViewController */,
@@ -123,6 +189,7 @@
 		CF80E30E20339C6800CE21AB /* Kits */ = {
 			isa = PBXGroup;
 			children = (
+				CF3D9BA520405DE900C88938 /* Global */,
 			);
 			path = Kits;
 			sourceTree = "<group>";
@@ -130,6 +197,7 @@
 		CF80E30F20339C6800CE21AB /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				CF611B3F20470AB0007C4807 /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -137,6 +205,8 @@
 		CF80E31020339C6800CE21AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CF611B352046DFBC007C4807 /* User.swift */,
+				CF611B372046E0F4007C4807 /* Section.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +214,9 @@
 		CF80E31120339C6800CE21AB /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				CF3D9B9E203F25A700C88938 /* UIImage+Extensions.swift */,
+				CFF9DB3E204452890097060B /* ReusableCell.swift */,
+				CFF9DB44204469C20097060B /* UITableView+Extensions.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -225,10 +298,12 @@
 		CF80E3352033A34F00CE21AB /* TimerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CFF9DB40204455E70097060B /* DataSource */,
+				CF3D9BA020401ACE00C88938 /* TimerTableViewCell */,
 				CF80E3362033A37900CE21AB /* TimerViewModel */,
 				CF80E3372033A38400CE21AB /* TimerView.swift */,
-				CF80E33A2033A39400CE21AB /* TimerViewViewController.swift */,
-				CF80E33B2033A39400CE21AB /* TimerViewViewController.xib */,
+				CF80E33A2033A39400CE21AB /* TimerViewController.swift */,
+				CF80E33B2033A39400CE21AB /* TimerViewController.xib */,
 			);
 			path = TimerViewController;
 			sourceTree = "<group>";
@@ -239,6 +314,41 @@
 				CF80E33E2033A3A100CE21AB /* TimerViewModel.swift */,
 			);
 			path = TimerViewModel;
+			sourceTree = "<group>";
+		};
+		CF93AEBB203DCC820019D407 /* TabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF93AEBC203DCC9F0019D407 /* TabBarViewController.swift */,
+			);
+			path = TabBarViewController;
+			sourceTree = "<group>";
+		};
+		CF9AE350204411A000358F8D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF9AE351204411D000358F8D /* RealmManager.swift */,
+				CF611B392046ED38007C4807 /* CoreDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF9AE353204415EC00358F8D /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				CF9AE354204415F600358F8D /* MVVMC */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		CF9AE354204415F600358F8D /* MVVMC */ = {
+			isa = PBXGroup;
+			children = (
+				CF9AE3562044161200358F8D /* ViewController.swift */,
+				CF9AE3582044166500358F8D /* ViewModel.swift */,
+				CF611B332046DC60007C4807 /* Coordinator.swift */,
+			);
+			path = MVVMC;
 			sourceTree = "<group>";
 		};
 		CFCDAB9C2033976B000CD36F = {
@@ -270,6 +380,14 @@
 				CF726AE7203C7D480015BB70 /* ObjectiveBridgingHeader.h */,
 			);
 			path = lazymetro;
+			sourceTree = "<group>";
+		};
+		CFF9DB40204455E70097060B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CFF9DB42204455F90097060B /* TimerDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +455,8 @@
 				CF80E3282033A1E900CE21AB /* TripManagerViewController.xib in Resources */,
 				CF80E3322033A33E00CE21AB /* MapViewController.xib in Resources */,
 				CFCDABB32033976B000CD36F /* LaunchScreen.storyboard in Resources */,
-				CF80E33D2033A39400CE21AB /* TimerViewViewController.xib in Resources */,
+				CF80E33D2033A39400CE21AB /* TimerViewController.xib in Resources */,
+				CF3D9BA420401AE900C88938 /* TimerTableViewCell.xib in Resources */,
 				CFCDABB02033976B000CD36F /* Assets.xcassets in Resources */,
 				CF80E31920339ED200CE21AB /* SettingsViewController.xib in Resources */,
 			);
@@ -394,6 +513,7 @@
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
@@ -404,6 +524,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -421,18 +542,35 @@
 			files = (
 				CF80E33F2033A3A100CE21AB /* TimerViewModel.swift in Sources */,
 				CF80E31F20339F1400CE21AB /* SettingsView.swift in Sources */,
+				CF611B342046DC60007C4807 /* Coordinator.swift in Sources */,
+				CF3D9BA720405DFA00C88938 /* Log.swift in Sources */,
 				CF80E3242033A1DE00CE21AB /* TripManagerView.swift in Sources */,
+				CF611B362046DFBC007C4807 /* User.swift in Sources */,
 				CF80E3272033A1E900CE21AB /* TripManagerViewController.swift in Sources */,
 				CF80E3342033A34B00CE21AB /* MapView.swift in Sources */,
+				CF3D9BA320401AE900C88938 /* TimerTableViewCell.swift in Sources */,
+				CF611B4020470AB0007C4807 /* Constants.swift in Sources */,
 				CF80E3312033A33E00CE21AB /* MapViewController.swift in Sources */,
+				CFF9DB3F204452890097060B /* ReusableCell.swift in Sources */,
 				CFCDABA92033976B000CD36F /* AppDelegate.swift in Sources */,
+				CF9AE35B20443F0D00358F8D /* TableDataSource.swift in Sources */,
 				CF80E3382033A38400CE21AB /* TimerView.swift in Sources */,
+				CFF9DB43204455F90097060B /* TimerDataSource.swift in Sources */,
+				CF9AE3572044161200358F8D /* ViewController.swift in Sources */,
 				CF80E31820339ED200CE21AB /* SettingsViewController.swift in Sources */,
+				CF611B382046E0F4007C4807 /* Section.swift in Sources */,
 				CF80E31B20339EF300CE21AB /* SettingsViewModel.swift in Sources */,
+				CF9AE3592044166500358F8D /* ViewModel.swift in Sources */,
 				CF80E32A2033A1F700CE21AB /* TripManagerViewModel.swift in Sources */,
 				CF80E31D20339F0000CE21AB /* SettingsDataSource.swift in Sources */,
-				CF80E33C2033A39400CE21AB /* TimerViewViewController.swift in Sources */,
+				CF80E33C2033A39400CE21AB /* TimerViewController.swift in Sources */,
+				CFF9DB45204469C20097060B /* UITableView+Extensions.swift in Sources */,
+				CF9AE352204411D000358F8D /* RealmManager.swift in Sources */,
+				CF611B3A2046ED38007C4807 /* CoreDataManager.swift in Sources */,
+				CF93AEBE203DCC9F0019D407 /* TabBarViewController.swift in Sources */,
 				CF80E32E2033A32E00CE21AB /* MapViewModel.swift in Sources */,
+				CF611B3E2046EED1007C4807 /* lazymetroCoreDataModel.xcdatamodeld in Sources */,
+				CF3D9B9F203F25A700C88938 /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +755,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF611B3C2046EED1007C4807 /* lazymetroCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF611B3D2046EED1007C4807 /* lazymetroCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = CF611B3D2046EED1007C4807 /* lazymetroCoreDataModel.xcdatamodel */;
+			path = lazymetroCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CFCDAB9D2033976B000CD36F /* Project object */;
 }

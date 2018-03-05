@@ -12,5 +12,6 @@ target 'lazymetro' do
     pod 'IDPRootViewGettable', :git => 'https://github.com/idapgroup/IDPRootViewGettable.git'
 	pod 'GoogleMaps'
 pod 'RAMAnimatedTabBarController'
+pod 'Result', '~> 3.0.0'
 
 end

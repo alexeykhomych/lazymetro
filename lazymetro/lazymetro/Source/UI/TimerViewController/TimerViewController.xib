@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimerViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT" customClass="TimerView" customModule="lazymetro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JI6-y0-H56">
+                    <rect key="frame" x="25" y="25" width="325" height="75"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Station A" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2B4-u9-1Sr">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Station B" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TJw-Lg-S2h">
+                            <rect key="frame" x="0.0" y="45" width="325" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPv-RZ-9zJ">
+                    <rect key="frame" x="40" y="125" width="295" height="72"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pNy-74-emY">
+                    <rect key="frame" x="25" y="217" width="325" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6a-kO-6l2">
+                            <rect key="frame" x="0.0" y="0.0" width="152.5" height="40"/>
+                            <state key="normal" title="Add"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAJ-yL-nFm">
+                            <rect key="frame" x="172.5" y="0.0" width="152.5" height="40"/>
+                            <state key="normal" title="Reset"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0zo-Ph-yE7"/>
+                        <constraint firstItem="zAJ-yL-nFm" firstAttribute="width" secondItem="M6a-kO-6l2" secondAttribute="width" id="RTX-he-dwp"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VSb-1f-LlF">
+                    <rect key="frame" x="0.0" y="277" width="375" height="390"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VSb-1f-LlF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7PR-dh-ghR"/>
+                <constraint firstItem="pNy-74-emY" firstAttribute="top" secondItem="OPv-RZ-9zJ" secondAttribute="bottom" constant="20" id="7nY-7V-yES"/>
+                <constraint firstItem="OPv-RZ-9zJ" firstAttribute="top" secondItem="JI6-y0-H56" secondAttribute="bottom" constant="25" id="Exy-PN-83X"/>
+                <constraint firstItem="VSb-1f-LlF" firstAttribute="top" secondItem="pNy-74-emY" secondAttribute="bottom" constant="20" id="H5a-eb-z4c"/>
+                <constraint firstItem="JI6-y0-H56" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="MKe-gN-xTE"/>
+                <constraint firstAttribute="bottom" secondItem="VSb-1f-LlF" secondAttribute="bottom" id="Vom-GN-VTs"/>
+                <constraint firstItem="pNy-74-emY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="dvS-qd-hT3"/>
+                <constraint firstAttribute="trailing" secondItem="VSb-1f-LlF" secondAttribute="trailing" id="j6E-K8-T4P"/>
+                <constraint firstAttribute="trailing" secondItem="OPv-RZ-9zJ" secondAttribute="trailing" constant="40" id="n1B-HX-lH9"/>
+                <constraint firstItem="JI6-y0-H56" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="tCZ-cB-ajA"/>
+                <constraint firstAttribute="trailing" secondItem="JI6-y0-H56" secondAttribute="trailing" constant="25" id="tsT-oN-PjA"/>
+                <constraint firstItem="OPv-RZ-9zJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="v09-g4-nXH"/>
+                <constraint firstAttribute="trailing" secondItem="pNy-74-emY" secondAttribute="trailing" constant="25" id="zIN-PJ-ADK"/>
+            </constraints>
+            <connections>
+                <outlet property="addButton" destination="M6a-kO-6l2" id="aGM-9u-pdW"/>
+                <outlet property="resetButton" destination="zAJ-yL-nFm" id="fzh-7x-LQJ"/>
+                <outlet property="stationATextField" destination="2B4-u9-1Sr" id="Sg8-g6-SDQ"/>
+                <outlet property="stationBTextField" destination="TJw-Lg-S2h" id="Vup-XG-5J9"/>
+                <outlet property="tableView" destination="VSb-1f-LlF" id="F2a-Ti-Lya"/>
+                <outlet property="timerALabel" destination="OPv-RZ-9zJ" id="Mrg-hy-qE2"/>
+            </connections>
+        </view>
+    </objects>
+</document>
